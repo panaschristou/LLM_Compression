@@ -38,6 +38,6 @@ Value of Solution:
 ![image](results/quantized%20model%20performance%20c4.png)
 
 
-![image](results/performance_infer_compute_line_wikitext2_GPU Memory Requirements (MiB).png)
+![image](results/performance_infer_compute_line_wikitext2_Computational%20Complexity%20(GMac).png)
 ![image](results/performance_infer_compute_line_wikitext2_Number of Parameters (M).png)
 ![image](results/performance_infer_compute_line_wikitext2_Computational Complexity (GMac).png)
