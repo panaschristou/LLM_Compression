@@ -25,6 +25,13 @@ Value of Solution:
 - Quantization
   - 4 bit NormalFloat quantization
 
+# Requirements
+- LLM Pruner
+- SparseGPT
+- BitsandBytes
+- Lora
+- Qlora
+
 ![image](results/methodpaper_model_structure_new.png)
 
 # Results
