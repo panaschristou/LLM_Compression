@@ -25,4 +25,10 @@ Value of Solution:
 - Quantization
   - 4 bit NormalFloat quantization
 
-![image](results/methodpaper_model_structure_new.pdf)
+![image](results/methodpaper_model_structure_new.png)
+
+# Results
+
+![image](results/bubble_wikitext2.png)
+![image](results/bubble_ptb.png)
+![image](results/bubble_c4.png)
