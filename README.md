@@ -33,9 +33,9 @@ Value of Solution:
 ![image](results/bubble_ptb.png)
 ![image](results/bubble_c4.png)
 
-![image](results/quantized\_model\_performance\_wikitext2.png)
-![image](results/quantized\_model\_performance\_ptb.png)
-![image](results/quantized\_model\_performance\_c4.png)
+![image](results/quantized%20model%20performance%20wikitext2.png)
+![image](results/quantized%20model%20performance%20ptb.png)
+![image](results/quantized%20model%20performance%20c4.png)
 
 
 ![image](results/performance_infer_compute_line_wikitext2_GPU Memory Requirements (MiB).png)
