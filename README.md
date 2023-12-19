@@ -25,13 +25,6 @@ Value of Solution:
 - Quantization
   - 4 bit NormalFloat quantization
 
-# Requirements
-- LLM Pruner
-- SparseGPT
-- BitsandBytes
-- Lora
-- Qlora
-
 ![image](results/methodpaper_model_structure_new.png)
 
 # Results
@@ -40,11 +33,11 @@ Value of Solution:
 ![image](results/bubble_ptb.png)
 ![image](results/bubble_c4.png)
 
-![image](results/quantized%20model%20performance%20wikitext2.png)
-![image](results/quantized%20model%20performance%20ptb.png)
-![image](results/quantized%20model%20performance%20c4.png)
+![image](https://github.com/panaschristou/LLM_Compression/blob/main/results/quantized_model_performance_wikitext2.png)
+![image](https://github.com/panaschristou/LLM_Compression/blob/main/results/quantized_model_performance_ptb.png)
+![image](https://github.com/panaschristou/LLM_Compression/blob/main/results/quantized_model_performance_c4.png)
 
 
 ![results/performance_infer_compute_line_wikitext2_Computational%20Complexity%20(GMac).png](https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_Number%20of%20Parameters%20(M).png)
-![image](results/performance_infer_compute_line_wikitext2_Number of Parameters (M).png)
-![image](results/performance_infer_compute_line_wikitext2_Computational Complexity (GMac).png)
+![[image](results/performance_infer_compute_line_wikitext2_Number of Parameters (M).png)](https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_GPU%20Memory%20Requirements%20(MiB).png)https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_GPU%20Memory%20Requirements%20(MiB).png
+![[image](results/performance_infer_compute_line_wikitext2_Computational Complexity (GMac).png)](https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_Computational%20Complexity%20(GMac).png)https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_Computational%20Complexity%20(GMac).png
