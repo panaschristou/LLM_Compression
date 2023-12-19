@@ -39,5 +39,5 @@ Value of Solution:
 
 
 ![results/performance_infer_compute_line_wikitext2_Computational%20Complexity%20(GMac).png](https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_Number%20of%20Parameters%20(M).png)
-![[image](results/performance_infer_compute_line_wikitext2_Number of Parameters (M).png)](https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_GPU%20Memory%20Requirements%20(MiB).png)https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_GPU%20Memory%20Requirements%20(MiB).png
-![[image](results/performance_infer_compute_line_wikitext2_Computational Complexity (GMac).png)](https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_Computational%20Complexity%20(GMac).png)https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_Computational%20Complexity%20(GMac).png
+![[image](results/performance_infer_compute_line_wikitext2_Number of Parameters (M).png)](https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_GPU%20Memory%20Requirements%20(MiB).png) 
+![[image](results/performance_infer_compute_line_wikitext2_Computational Complexity (GMac).png)](https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_Computational%20Complexity%20(GMac).png) 
