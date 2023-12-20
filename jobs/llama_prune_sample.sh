@@ -25,7 +25,7 @@ echo "You can use the command:"
 echo "       python generate.py --model_type tune_prune_LLM --ckpt prune_log/$prune_ckpt_path/pytorch_model.bin --lora_ckpt tune_log/$tune_ckpt_path"
 echo "to use the pruned model"
 
-echo "Test speedup of pretrained model"
+echo "Test speedup of the pretrained model"
 python test_speedup.py --model_type pretrain --base_model meta-llama/Llama-2-7b-hf
 echo "Test ended"
 
