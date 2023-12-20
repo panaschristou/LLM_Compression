@@ -1,0 +1,1076 @@
+2023-12-07 20:13:12,326 INFO    StreamThr :3197566 [internal.py:wandb_internal():86] W&B internal server running at pid: 3197566, started at: 2023-12-07 20:13:12.325546
+2023-12-07 20:13:12,331 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status
+2023-12-07 20:13:12,336 INFO    WriterThread:3197566 [datastore.py:open_for_write():85] open: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/run-uzdxyybd.wandb
+2023-12-07 20:13:12,337 DEBUG   SenderThread:3197566 [sender.py:send():375] send: header
+2023-12-07 20:13:12,378 DEBUG   SenderThread:3197566 [sender.py:send():375] send: run
+2023-12-07 20:13:12,610 INFO    SenderThread:3197566 [dir_watcher.py:__init__():219] watching files in: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files
+2023-12-07 20:13:12,610 INFO    SenderThread:3197566 [sender.py:_start_run_threads():1124] run started: uzdxyybd with start time 1701997992.323148
+2023-12-07 20:13:12,610 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: summary_record
+2023-12-07 20:13:12,611 INFO    SenderThread:3197566 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-07 20:13:12,614 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: check_version
+2023-12-07 20:13:12,614 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: check_version
+2023-12-07 20:13:12,702 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: run_start
+2023-12-07 20:13:12,734 DEBUG   HandlerThread:3197566 [system_info.py:__init__():31] System info init
+2023-12-07 20:13:12,734 DEBUG   HandlerThread:3197566 [system_info.py:__init__():46] System info init done
+2023-12-07 20:13:12,734 INFO    HandlerThread:3197566 [system_monitor.py:start():181] Starting system monitor
+2023-12-07 20:13:12,735 INFO    SystemMonitor:3197566 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-12-07 20:13:12,735 INFO    HandlerThread:3197566 [system_monitor.py:probe():201] Collecting system info
+2023-12-07 20:13:12,736 INFO    SystemMonitor:3197566 [interfaces.py:start():190] Started cpu monitoring
+2023-12-07 20:13:12,738 INFO    SystemMonitor:3197566 [interfaces.py:start():190] Started disk monitoring
+2023-12-07 20:13:12,742 INFO    SystemMonitor:3197566 [interfaces.py:start():190] Started gpu monitoring
+2023-12-07 20:13:12,744 INFO    SystemMonitor:3197566 [interfaces.py:start():190] Started memory monitoring
+2023-12-07 20:13:12,744 INFO    SystemMonitor:3197566 [interfaces.py:start():190] Started network monitoring
+2023-12-07 20:13:12,825 DEBUG   HandlerThread:3197566 [system_info.py:probe():195] Probing system
+2023-12-07 20:13:12,826 DEBUG   HandlerThread:3197566 [system_info.py:_probe_git():180] Probing git
+2023-12-07 20:13:12,835 DEBUG   HandlerThread:3197566 [system_info.py:_probe_git():188] Probing git done
+2023-12-07 20:13:12,835 DEBUG   HandlerThread:3197566 [system_info.py:probe():240] Probing system done
+2023-12-07 20:13:12,835 DEBUG   HandlerThread:3197566 [system_monitor.py:probe():210] {'os': 'Linux-4.18.0-372.26.1.el8_6.x86_64-x86_64-with-glibc2.35', 'python': '3.11.5', 'heartbeatAt': '2023-12-08T01:13:12.825726', 'startedAt': '2023-12-08T01:13:12.289580', 'docker': None, 'cuda': None, 'args': ('huggyllama/llama-13b', 'c4', '--sparsity', '0.5', '--save', 'output/llama_0.5', '--log_wandb'), 'state': 'running', 'program': '/scratch/xc1490/projects/hpml/project/sparsegpt/llama.py', 'codePath': 'llama.py', 'git': {'remote': 'https://github.com/IST-DASLab/sparsegpt.git', 'commit': 'c3bbf613a1822229767f4d8870b933049b8bef15'}, 'email': '240682348@qq.com', 'root': '/scratch/xc1490/projects/hpml/project/sparsegpt', 'host': 'ga022.hpc.nyu.edu', 'username': 'xc1490', 'executable': '/ext3/miniconda3/bin/python', 'cpu_count': 80, 'cpu_count_logical': 160, 'cpu_freq': {'current': 2.721243749999997, 'min': 3400.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 1.485, 'min': 3400.0, 'max': 3400.0}, {'current': 0.799, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 2.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 1.215, 'min': 3400.0, 'max': 3400.0}, {'current': 2.299, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 2.13, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 1.628, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 0.866, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 2.072, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 2.3, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 1.118, 'min': 3400.0, 'max': 3400.0}, {'current': 1.541, 'min': 3400.0, 'max': 3400.0}, {'current': 0.875, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 1.455, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 2.3, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 2.3, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 1.682, 'min': 3400.0, 'max': 3400.0}, {'current': 2.299, 'min': 3400.0, 'max': 3400.0}, {'current': 2.299, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 0.901, 'min': 3400.0, 'max': 3400.0}, {'current': 0.849, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 0.821, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 0.913, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 1.04, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 2.999, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 2.9, 'min': 3400.0, 'max': 3400.0}, {'current': 1.414, 'min': 3400.0, 'max': 3400.0}, {'current': 0.987, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 1.157, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 1.634, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 2.299, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 0.937, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 2.099, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 1.237, 'min': 3400.0, 'max': 3400.0}, {'current': 0.866, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 1.77, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 1.672, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 2.177, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 2.3, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 2.3, 'min': 3400.0, 'max': 3400.0}, {'current': 2.3, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 0.841, 'min': 3400.0, 'max': 3400.0}, {'current': 0.943, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 1.012, 'min': 3400.0, 'max': 3400.0}, {'current': 1.017, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 0.843, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 3.4, 'min': 3400.0, 'max': 3400.0}, {'current': 2.999, 'min': 3400.0, 'max': 3400.0}, {'current': 2.999, 'min': 3400.0, 'max': 3400.0}, {'current': 2.999, 'min': 3400.0, 'max': 3400.0}, {'current': 3.0, 'min': 3400.0, 'max': 3400.0}, {'current': 2.999, 'min': 3400.0, 'max': 3400.0}], 'disk': {'total': 14.915481567382812, 'used': 8.333755493164062}, 'gpu': 'NVIDIA A100-SXM4-80GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}], 'memory': {'total': 1007.2622756958008}}
+2023-12-07 20:13:12,838 INFO    HandlerThread:3197566 [system_monitor.py:probe():211] Finished collecting system info
+2023-12-07 20:13:12,838 INFO    HandlerThread:3197566 [system_monitor.py:probe():214] Publishing system info
+2023-12-07 20:13:12,838 DEBUG   HandlerThread:3197566 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-12-07 20:13:12,838 DEBUG   HandlerThread:3197566 [system_info.py:_save_pip():67] Saving pip packages done
+2023-12-07 20:13:12,839 DEBUG   HandlerThread:3197566 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-12-07 20:13:13,611 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/requirements.txt
+2023-12-07 20:13:13,611 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/wandb-summary.json
+2023-12-07 20:13:13,611 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/conda-environment.yaml
+2023-12-07 20:13:37,051 DEBUG   HandlerThread:3197566 [system_info.py:_save_conda():86] Saving conda packages done
+2023-12-07 20:13:37,055 INFO    HandlerThread:3197566 [system_monitor.py:probe():216] Finished publishing system info
+2023-12-07 20:13:37,057 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:13:37,057 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: keepalive
+2023-12-07 20:13:37,057 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:13:37,057 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: keepalive
+2023-12-07 20:13:37,057 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:13:37,057 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: keepalive
+2023-12-07 20:13:37,057 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:13:37,057 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: keepalive
+2023-12-07 20:13:37,058 DEBUG   SenderThread:3197566 [sender.py:send():375] send: files
+2023-12-07 20:13:37,058 INFO    SenderThread:3197566 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-12-07 20:13:37,064 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:13:37,065 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:13:37,252 DEBUG   SenderThread:3197566 [sender.py:send():375] send: telemetry
+2023-12-07 20:13:37,407 INFO    wandb-upload_0:3197566 [upload_job.py:push():137] Uploaded file /state/partition1/job-40657066/tmpd98h9vzuwandb/fjxkl4q3-wandb-metadata.json
+2023-12-07 20:13:37,628 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/conda-environment.yaml
+2023-12-07 20:13:37,628 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/wandb-metadata.json
+2023-12-07 20:13:37,628 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_created():278] file/dir created: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:13:38,453 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:13:39,630 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:13:43,466 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:13:43,633 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/config.yaml
+2023-12-07 20:13:44,995 DEBUG   SenderThread:3197566 [sender.py:send():375] send: telemetry
+2023-12-07 20:13:47,637 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:13:49,439 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:13:52,325 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:13:52,325 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:13:54,451 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:13:59,452 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:14:04,462 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:14:07,223 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:14:07,223 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:14:10,353 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:14:12,745 DEBUG   SystemMonitor:3197566 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-12-07 20:14:12,751 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:14:15,756 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:14:16,666 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/config.yaml
+2023-12-07 20:14:20,857 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:14:22,222 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:14:22,222 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:14:26,291 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:14:31,291 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:14:36,292 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:14:37,222 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:14:37,223 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:14:41,342 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:14:42,755 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:14:46,757 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:14:51,758 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:14:52,222 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:14:52,223 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:14:57,381 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:15:02,382 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:15:07,222 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:15:07,222 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:15:08,377 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:15:12,757 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:15:13,759 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:15:18,759 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:15:22,222 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:15:22,223 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:15:24,295 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:15:29,296 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:15:34,297 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:15:37,513 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:15:37,514 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:15:37,741 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:15:39,626 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:15:42,761 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:15:44,763 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:15:49,764 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:15:52,347 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:15:52,348 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:15:55,464 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:16:00,465 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:16:05,465 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:16:07,346 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:16:07,347 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:16:11,430 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:16:12,764 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:16:16,767 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:16:21,767 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:16:22,346 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:16:22,347 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:16:27,417 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:16:32,417 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:16:37,347 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:16:37,348 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:16:37,461 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:16:42,462 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:16:42,801 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:16:47,804 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:16:52,347 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:16:52,348 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:16:53,661 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:16:58,662 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:17:03,665 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:17:07,347 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:17:07,348 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:17:09,540 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:17:12,769 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:17:14,771 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:17:17,719 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:17:20,179 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:17:22,591 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:17:22,591 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:17:25,805 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:17:30,808 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:17:35,812 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:17:37,459 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:17:37,460 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:17:41,532 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:17:42,773 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:17:46,776 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:17:51,776 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:17:52,459 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:17:52,459 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:17:57,607 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:18:03,550 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:18:03,835 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:18:07,458 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:18:07,459 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:18:08,567 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:18:09,840 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:18:12,777 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:18:13,779 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:18:13,844 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:18:18,780 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:18:23,780 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:18:26,623 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:18:26,624 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:18:29,777 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:18:29,859 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:18:31,861 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:18:35,403 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:18:40,404 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:18:42,778 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:18:43,714 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:18:43,714 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:18:46,246 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:18:46,886 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:18:51,246 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:18:56,247 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:18:58,698 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:18:58,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:19:01,855 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:19:06,856 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:19:08,907 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:19:12,690 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:19:12,782 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:19:13,698 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:19:13,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:19:17,767 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:19:22,768 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:19:27,769 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:19:28,698 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:19:28,698 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:19:32,789 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:19:37,844 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:19:38,932 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:19:42,787 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:19:43,689 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:19:43,699 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:19:43,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:19:48,847 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:19:54,572 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:19:54,946 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:19:56,947 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:19:58,699 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:19:58,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:19:58,948 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:19:59,873 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:20:02,951 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:20:05,043 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:20:10,044 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:20:12,787 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:20:13,698 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:20:13,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:20:14,957 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:20:18,699 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: keepalive
+2023-12-07 20:20:20,543 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:20:22,962 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:20:25,757 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:20:28,699 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:20:28,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:20:30,781 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:20:34,968 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:20:36,533 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:20:36,969 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:20:38,970 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:20:40,971 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:20:41,942 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:20:42,791 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:20:42,973 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:20:43,699 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:20:43,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:20:44,974 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:20:47,797 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:20:52,802 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:20:56,980 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:20:58,337 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:20:58,699 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:20:58,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:20:58,981 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:21:00,982 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:21:02,984 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:21:03,564 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:21:04,985 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:21:08,564 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:21:12,791 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:21:13,689 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:21:13,699 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:21:13,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:21:18,700 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: keepalive
+2023-12-07 20:21:21,949 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:21:25,024 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:21:27,025 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:21:27,648 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:21:28,699 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:21:28,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:21:32,935 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:21:38,647 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:21:39,031 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:21:41,032 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:21:43,033 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:21:43,086 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:21:43,690 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:21:43,699 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:21:43,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:21:45,034 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:21:47,036 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:21:49,550 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:21:54,551 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:21:58,699 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:21:58,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:21:59,042 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:21:59,587 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:22:01,043 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:03,044 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:04,831 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:22:05,046 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:07,047 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:09,048 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:10,488 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:22:12,795 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:22:13,699 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:22:13,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:22:15,827 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:22:21,065 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:21,487 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:22:23,066 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:25,067 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:26,875 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:22:27,068 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:28,699 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:22:28,699 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:22:29,069 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:32,836 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:22:37,837 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:22:41,075 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:42,797 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:22:43,076 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:43,260 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:22:43,700 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:22:43,700 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:22:45,078 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:47,079 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:48,482 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:22:51,081 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:22:53,487 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:22:58,515 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:22:58,700 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:22:58,700 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:23:03,088 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:04,252 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:23:05,089 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:07,090 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:09,091 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:09,444 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:23:11,092 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:12,798 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:23:13,700 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:23:13,700 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:23:14,854 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:23:19,854 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:23:23,098 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:25,099 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:25,188 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:23:27,100 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:28,700 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:23:28,700 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:23:29,102 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:30,397 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:23:33,104 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:35,398 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:23:40,398 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:23:42,800 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:23:43,700 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:23:43,700 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:23:45,110 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:46,150 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:23:47,111 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:49,112 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:51,114 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:51,447 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:23:53,115 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:23:56,448 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:23:58,700 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:23:58,700 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:24:01,801 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:24:05,122 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:07,123 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:07,180 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:24:09,124 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:11,125 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:12,377 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:24:12,802 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:24:13,700 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:24:13,700 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:24:15,128 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:17,813 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:24:22,813 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:24:27,134 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:28,112 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:24:28,700 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:24:28,701 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:24:29,135 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:31,137 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:33,138 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:33,304 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:24:35,139 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:38,305 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:24:42,804 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:24:43,691 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:24:43,700 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:24:43,700 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:24:47,145 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:49,038 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:24:49,147 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:51,149 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:53,150 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:54,240 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:24:57,152 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:24:58,700 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:24:58,701 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:24:59,854 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:25:04,854 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:25:09,159 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:09,965 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:25:11,160 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:12,806 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:25:13,161 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:13,700 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:25:13,701 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:25:15,162 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:15,168 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:25:17,163 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:20,169 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:25:25,180 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:25:28,701 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:25:28,701 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:25:29,184 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:30,908 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:25:31,185 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:33,186 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:35,187 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:36,114 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:25:37,188 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:41,115 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:25:42,807 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:25:43,701 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:25:43,701 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:25:46,774 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:25:51,195 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:51,860 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:25:53,196 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:55,198 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:57,170 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:25:57,199 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:25:58,701 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:25:58,701 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:25:59,200 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:02,812 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:26:07,812 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:26:11,206 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:12,809 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:26:12,915 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:26:13,207 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:13,701 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:26:13,701 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:26:15,208 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:17,209 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:18,128 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:26:19,211 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:23,132 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:26:28,133 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:26:28,701 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:26:28,701 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:26:31,217 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:33,223 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:33,885 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:26:35,233 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:37,252 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:39,094 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:26:39,254 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:41,255 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:42,811 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:26:43,701 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:26:43,701 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:26:44,806 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:26:49,806 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:26:53,261 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:54,949 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:26:55,262 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:57,264 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:26:58,701 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:26:58,701 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:26:59,265 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:00,155 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:27:01,266 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:05,155 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:27:10,156 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:27:12,814 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:27:13,272 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:13,701 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:27:13,702 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:27:15,273 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:15,885 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:27:17,274 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:19,276 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:21,090 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:27:21,277 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:23,278 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:26,091 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:27:28,701 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:27:28,702 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:27:31,874 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:27:35,284 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:37,285 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:37,680 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:27:39,286 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:41,288 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:42,815 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:27:42,818 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:27:43,289 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:43,701 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:27:43,702 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:27:47,845 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:27:52,845 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:27:55,295 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:57,296 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:27:58,636 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:27:58,702 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:27:58,702 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:27:59,297 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:01,298 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:03,300 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:03,991 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:28:05,301 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:08,991 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:28:12,818 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:28:13,702 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:28:13,702 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:28:14,776 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:28:17,307 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:19,308 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:20,437 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:28:21,309 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:23,310 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:25,311 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:25,938 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:28:28,702 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:28:28,702 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:28:31,839 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:28:36,987 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:28:37,318 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:39,319 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:41,320 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:42,207 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:28:42,821 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:28:43,321 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:43,702 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:28:43,702 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:28:47,324 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:28:47,883 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:28:52,883 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:28:57,936 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:28:58,702 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:28:58,702 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:28:59,330 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:01,331 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:03,161 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:29:03,332 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:05,333 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:07,334 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:08,812 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:29:12,822 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:29:13,702 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:29:13,702 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:29:14,778 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:29:19,341 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:19,851 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:29:21,342 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:23,343 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:25,077 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:29:25,347 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:28,702 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:29:28,702 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:29:29,349 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:30,838 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:29:35,839 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:29:40,886 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:29:41,356 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:42,823 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:29:43,357 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:43,702 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:29:43,702 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:29:45,358 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:46,129 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:29:47,359 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:49,360 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:29:51,782 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:29:56,794 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:29:58,702 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:29:58,703 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:30:01,367 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:01,822 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:30:03,368 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:05,369 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:07,059 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:30:07,370 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:11,372 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:12,716 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:30:12,826 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:30:13,702 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:30:13,703 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:30:17,857 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:30:23,379 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:23,601 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:30:25,380 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:27,381 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:28,701 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:30:28,702 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:30:28,703 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:30:29,382 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:31,383 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:33,738 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:30:38,739 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:30:42,826 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:30:43,390 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:43,703 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:30:43,703 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:30:43,854 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:30:45,391 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:47,392 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:49,021 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:30:49,393 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:53,405 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:30:54,690 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:30:58,703 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:30:58,703 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:30:59,759 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:31:05,412 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:05,584 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:31:07,413 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:09,414 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:10,962 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:31:11,415 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:12,829 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:31:13,416 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:13,703 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:31:13,703 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:31:16,785 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:31:21,785 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:31:25,423 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:27,424 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:27,468 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:31:28,703 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:31:28,703 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:31:29,425 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:31,426 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:32,663 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:31:35,428 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:37,664 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:31:42,665 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:31:42,830 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:31:43,703 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:31:43,703 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:31:47,435 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:48,393 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:31:49,436 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:51,437 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:53,438 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:53,602 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:31:55,439 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:31:58,603 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:31:58,703 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:31:58,703 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:32:03,758 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:32:07,511 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:09,343 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:32:09,512 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:11,514 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:12,834 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:32:13,515 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:13,703 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:32:13,703 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:32:14,556 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:32:17,517 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:19,564 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:32:24,564 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:32:28,703 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:32:28,704 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:32:29,523 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:30,302 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:32:31,524 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:33,526 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:35,525 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:32:35,527 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:37,528 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:40,526 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:32:42,834 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:32:43,703 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:32:43,704 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:32:45,774 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:32:49,534 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:51,267 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:32:51,535 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:53,536 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:55,537 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:32:56,471 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:32:58,703 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:32:58,704 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:32:59,539 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:33:01,800 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:33:06,800 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:33:11,546 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:33:12,246 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:33:12,835 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:33:13,547 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:33:13,704 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:33:13,704 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:33:15,548 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:33:17,472 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:33:17,549 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:33:19,550 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:33:22,473 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:33:27,474 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:33:28,703 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:33:28,704 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:33:31,565 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:33:33,202 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:33:33,566 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:33:35,567 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:33:37,568 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:33:38,404 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:33:41,582 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:33:42,837 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:33:43,584 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:33:43,704 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:33:43,712 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:33:43,712 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:33:48,829 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:33:53,829 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:33:58,854 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:34:03,854 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:34:04,302 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:34:04,302 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:34:08,597 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:09,360 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:34:11,599 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:12,839 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:34:13,600 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:14,401 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:34:15,601 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:17,602 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:19,157 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:34:19,157 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:34:19,603 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:19,917 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:34:21,604 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:23,606 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:25,269 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:34:25,607 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:29,609 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:30,603 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:34:31,610 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:33,611 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:34,157 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:34:34,157 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:34:35,612 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:36,162 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:34:37,613 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:39,614 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:41,471 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:34:41,616 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:42,841 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:34:43,620 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:45,621 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:46,991 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:34:47,622 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:49,157 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:34:49,157 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:34:49,623 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:51,625 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:52,340 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:34:55,627 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:57,628 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:34:57,862 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:34:58,629 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:00,630 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:02,632 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:03,204 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:35:04,157 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:35:04,158 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:35:04,633 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:06,634 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:08,635 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:08,726 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:35:10,636 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:12,637 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:12,843 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:35:13,844 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:35:14,638 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:18,641 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:19,158 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:35:19,158 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:35:19,158 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:35:20,642 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:22,643 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:24,644 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:24,964 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:35:26,645 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:28,646 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:30,478 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:35:30,647 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:32,648 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:34,158 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:35:34,158 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:35:34,649 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:36,308 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:35:36,685 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-07 20:35:36,687 DEBUG   SenderThread:3197566 [sender.py:send():375] send: history
+2023-12-07 20:35:36,688 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: summary_record
+2023-12-07 20:35:36,688 INFO    SenderThread:3197566 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-07 20:35:37,651 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/wandb-summary.json
+2023-12-07 20:35:38,651 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:41,689 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:35:42,653 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:42,845 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:35:44,655 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:46,656 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:47,066 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:35:48,657 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:49,158 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:35:49,158 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:35:50,658 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:52,514 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:35:52,659 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:54,660 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:56,661 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:35:57,939 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:35:58,662 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:00,663 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:02,664 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:03,404 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:36:04,158 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:36:04,158 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:36:04,665 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:06,667 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:08,668 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:08,821 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:36:10,669 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:12,670 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:12,846 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:36:14,250 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:36:14,671 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:16,672 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:18,673 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:19,158 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:36:19,158 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:36:19,275 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:36:20,674 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:22,675 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:24,676 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:25,100 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:36:26,417 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-07 20:36:26,417 DEBUG   SenderThread:3197566 [sender.py:send():375] send: history
+2023-12-07 20:36:26,418 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: summary_record
+2023-12-07 20:36:26,418 INFO    SenderThread:3197566 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-07 20:36:26,678 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:26,678 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/wandb-summary.json
+2023-12-07 20:36:30,681 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:31,022 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:36:32,682 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:34,169 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:36:34,169 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:36:36,305 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:36:41,305 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:36:42,687 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:42,849 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:36:44,689 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:46,690 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:46,864 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:36:49,159 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:36:49,160 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:36:50,692 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:52,693 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:52,833 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:36:56,696 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:36:57,861 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:36:58,697 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:02,699 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:02,904 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:37:04,159 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:37:04,160 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:37:04,700 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:07,987 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:37:08,702 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:10,703 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:12,850 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:37:13,029 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:37:14,706 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:16,707 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:18,052 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:37:19,159 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:37:19,160 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:37:20,709 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:22,710 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:23,099 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:37:26,713 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:28,120 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:37:28,714 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:32,716 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:33,161 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:37:34,160 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:37:34,160 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:37:34,717 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:38,201 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:37:38,729 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:40,738 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:42,852 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:37:43,260 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:37:44,757 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:46,767 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:48,292 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:37:49,160 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:37:49,160 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:37:50,773 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:52,774 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:53,354 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:37:56,777 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:37:58,391 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:37:58,778 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:02,780 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:03,431 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:38:04,160 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:38:04,160 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:38:04,781 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:08,474 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:38:08,783 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:10,784 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:12,853 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:38:13,518 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:38:14,787 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:18,543 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:38:18,789 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:19,160 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:38:19,160 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:38:20,790 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:23,590 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:38:24,792 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:26,793 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:28,613 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:38:30,796 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:32,797 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:33,656 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:38:34,160 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:38:34,160 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:38:36,799 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:38,701 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:38:38,800 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:42,802 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:42,855 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:38:43,856 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:38:44,569 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: partial_history
+2023-12-07 20:38:44,570 DEBUG   SenderThread:3197566 [sender.py:send():375] send: history
+2023-12-07 20:38:44,570 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: summary_record
+2023-12-07 20:38:44,571 INFO    SenderThread:3197566 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-07 20:38:44,803 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/wandb-summary.json
+2023-12-07 20:38:46,804 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:38:49,306 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:38:49,306 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:38:49,387 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:38:54,495 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:38:59,496 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:39:04,496 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:39:04,833 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:39:04,833 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:39:09,891 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:39:12,861 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:39:15,863 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:39:20,649 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: stop_status
+2023-12-07 20:39:20,649 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: stop_status
+2023-12-07 20:39:20,926 DEBUG   SenderThread:3197566 [sender.py:send():375] send: exit
+2023-12-07 20:39:20,927 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:39:20,927 INFO    SenderThread:3197566 [sender.py:send_exit():598] handling exit code: 0
+2023-12-07 20:39:20,928 INFO    SenderThread:3197566 [sender.py:send_exit():600] handling runtime: 1567
+2023-12-07 20:39:20,929 INFO    SenderThread:3197566 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-07 20:39:20,929 INFO    SenderThread:3197566 [sender.py:send_exit():606] send defer
+2023-12-07 20:39:20,930 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:20,930 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 0
+2023-12-07 20:39:21,425 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:21,425 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-12-07 20:39:21,425 INFO    SenderThread:3197566 [sender.py:transition_state():626] send defer: 1
+2023-12-07 20:39:21,426 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:21,426 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 1
+2023-12-07 20:39:21,426 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:21,426 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-12-07 20:39:21,427 INFO    SenderThread:3197566 [sender.py:transition_state():626] send defer: 2
+2023-12-07 20:39:21,427 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:21,427 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 2
+2023-12-07 20:39:21,427 INFO    HandlerThread:3197566 [system_monitor.py:finish():190] Stopping system monitor
+2023-12-07 20:39:21,427 DEBUG   SystemMonitor:3197566 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-12-07 20:39:21,428 DEBUG   SystemMonitor:3197566 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-12-07 20:39:21,434 INFO    HandlerThread:3197566 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-07 20:39:21,435 INFO    HandlerThread:3197566 [interfaces.py:finish():202] Joined disk monitor
+2023-12-07 20:39:21,628 INFO    HandlerThread:3197566 [interfaces.py:finish():202] Joined gpu monitor
+2023-12-07 20:39:21,628 INFO    HandlerThread:3197566 [interfaces.py:finish():202] Joined memory monitor
+2023-12-07 20:39:21,628 INFO    HandlerThread:3197566 [interfaces.py:finish():202] Joined network monitor
+2023-12-07 20:39:21,629 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:21,629 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-12-07 20:39:21,629 INFO    SenderThread:3197566 [sender.py:transition_state():626] send defer: 3
+2023-12-07 20:39:21,629 DEBUG   SenderThread:3197566 [sender.py:send():375] send: stats
+2023-12-07 20:39:21,629 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:21,630 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 3
+2023-12-07 20:39:21,630 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:21,630 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-12-07 20:39:21,630 INFO    SenderThread:3197566 [sender.py:transition_state():626] send defer: 4
+2023-12-07 20:39:21,630 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:21,630 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 4
+2023-12-07 20:39:21,630 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:21,630 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-12-07 20:39:21,630 INFO    SenderThread:3197566 [sender.py:transition_state():626] send defer: 5
+2023-12-07 20:39:21,630 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:21,630 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 5
+2023-12-07 20:39:21,630 DEBUG   SenderThread:3197566 [sender.py:send():375] send: summary
+2023-12-07 20:39:21,631 INFO    SenderThread:3197566 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-12-07 20:39:21,631 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:21,631 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-12-07 20:39:21,631 INFO    SenderThread:3197566 [sender.py:transition_state():626] send defer: 6
+2023-12-07 20:39:21,631 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:21,631 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 6
+2023-12-07 20:39:21,631 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:21,631 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-12-07 20:39:21,631 INFO    SenderThread:3197566 [sender.py:transition_state():626] send defer: 7
+2023-12-07 20:39:21,631 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: status_report
+2023-12-07 20:39:21,631 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:21,632 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 7
+2023-12-07 20:39:21,632 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:21,632 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-12-07 20:39:21,691 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: poll_exit
+2023-12-07 20:39:21,833 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/wandb-summary.json
+2023-12-07 20:39:22,681 INFO    SenderThread:3197566 [sender.py:transition_state():626] send defer: 8
+2023-12-07 20:39:22,681 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: poll_exit
+2023-12-07 20:39:22,681 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:22,682 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 8
+2023-12-07 20:39:22,682 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:22,683 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-12-07 20:39:22,693 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: poll_exit
+2023-12-07 20:39:22,698 INFO    SenderThread:3197566 [sender.py:transition_state():626] send defer: 9
+2023-12-07 20:39:22,698 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: poll_exit
+2023-12-07 20:39:22,699 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:22,699 DEBUG   SenderThread:3197566 [sender.py:send():375] send: artifact
+2023-12-07 20:39:22,699 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 9
+2023-12-07 20:39:22,834 INFO    Thread-12 :3197566 [dir_watcher.py:_on_file_modified():295] file/dir modified: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:39:23,506 INFO    wandb-upload_0:3197566 [upload_job.py:push():92] Skipped uploading /home/xc1490/.local/share/wandb/artifacts/staging/tmpnktkhnmx
+2023-12-07 20:39:23,694 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: poll_exit
+2023-12-07 20:39:23,767 INFO    wandb-upload_1:3197566 [upload_job.py:push():95] Uploaded file /home/xc1490/.local/share/wandb/artifacts/staging/tmpp0bknd98
+2023-12-07 20:39:24,504 INFO    SenderThread:3197566 [sender.py:send_artifact():1474] sent artifact job-https___github.com_IST-DASLab_sparsegpt.git_llama.py - {'id': 'QXJ0aWZhY3Q6NjYwOTc0NTAx', 'digest': '5ea01e6f826e2f098f8dbb7d672488fb', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyMTc4ODkyMQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjYwODY4MDU5', 'versionIndex': 0}}, 'version': 'latest'}
+2023-12-07 20:39:24,504 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:24,504 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-12-07 20:39:24,504 INFO    SenderThread:3197566 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-12-07 20:39:24,836 INFO    SenderThread:3197566 [dir_watcher.py:finish():395] scan: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files
+2023-12-07 20:39:24,837 INFO    SenderThread:3197566 [dir_watcher.py:finish():409] scan save: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/conda-environment.yaml conda-environment.yaml
+2023-12-07 20:39:24,837 INFO    SenderThread:3197566 [dir_watcher.py:finish():409] scan save: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/wandb-metadata.json wandb-metadata.json
+2023-12-07 20:39:24,837 INFO    SenderThread:3197566 [dir_watcher.py:finish():409] scan save: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/config.yaml config.yaml
+2023-12-07 20:39:24,844 INFO    SenderThread:3197566 [dir_watcher.py:finish():409] scan save: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/requirements.txt requirements.txt
+2023-12-07 20:39:24,845 INFO    SenderThread:3197566 [dir_watcher.py:finish():409] scan save: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/wandb-summary.json wandb-summary.json
+2023-12-07 20:39:24,856 INFO    SenderThread:3197566 [dir_watcher.py:finish():409] scan save: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log output.log
+2023-12-07 20:39:24,863 INFO    SenderThread:3197566 [sender.py:transition_state():626] send defer: 10
+2023-12-07 20:39:24,863 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: poll_exit
+2023-12-07 20:39:24,863 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:24,864 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 10
+2023-12-07 20:39:24,865 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:24,865 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-12-07 20:39:24,865 INFO    SenderThread:3197566 [file_pusher.py:finish():167] shutting down file pusher
+2023-12-07 20:39:25,133 INFO    wandb-upload_0:3197566 [upload_job.py:push():137] Uploaded file /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/conda-environment.yaml
+2023-12-07 20:39:25,268 INFO    wandb-upload_2:3197566 [upload_job.py:push():137] Uploaded file /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/requirements.txt
+2023-12-07 20:39:25,269 INFO    wandb-upload_1:3197566 [upload_job.py:push():137] Uploaded file /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/config.yaml
+2023-12-07 20:39:25,284 INFO    wandb-upload_4:3197566 [upload_job.py:push():137] Uploaded file /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/output.log
+2023-12-07 20:39:25,303 INFO    wandb-upload_3:3197566 [upload_job.py:push():137] Uploaded file /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/files/wandb-summary.json
+2023-12-07 20:39:25,503 INFO    Thread-11 (_thread_body):3197566 [sender.py:transition_state():626] send defer: 11
+2023-12-07 20:39:25,504 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:25,504 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 11
+2023-12-07 20:39:25,505 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:25,505 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-12-07 20:39:25,505 INFO    SenderThread:3197566 [file_pusher.py:join():172] waiting for file pusher
+2023-12-07 20:39:25,505 INFO    SenderThread:3197566 [sender.py:transition_state():626] send defer: 12
+2023-12-07 20:39:25,506 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:25,506 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 12
+2023-12-07 20:39:25,506 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:25,506 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-12-07 20:39:25,726 INFO    SenderThread:3197566 [sender.py:transition_state():626] send defer: 13
+2023-12-07 20:39:25,726 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:25,726 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 13
+2023-12-07 20:39:25,727 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:25,727 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-12-07 20:39:25,727 INFO    SenderThread:3197566 [sender.py:transition_state():626] send defer: 14
+2023-12-07 20:39:25,728 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: defer
+2023-12-07 20:39:25,728 DEBUG   SenderThread:3197566 [sender.py:send():375] send: final
+2023-12-07 20:39:25,728 INFO    HandlerThread:3197566 [handler.py:handle_request_defer():170] handle defer: 14
+2023-12-07 20:39:25,728 DEBUG   SenderThread:3197566 [sender.py:send():375] send: footer
+2023-12-07 20:39:25,729 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: defer
+2023-12-07 20:39:25,729 INFO    SenderThread:3197566 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-12-07 20:39:25,730 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: poll_exit
+2023-12-07 20:39:25,730 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: server_info
+2023-12-07 20:39:25,731 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: get_summary
+2023-12-07 20:39:25,732 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: poll_exit
+2023-12-07 20:39:25,732 DEBUG   SenderThread:3197566 [sender.py:send_request():402] send_request: server_info
+2023-12-07 20:39:25,737 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: sampled_history
+2023-12-07 20:39:25,789 INFO    MainThread:3197566 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-12-07 20:39:25,790 INFO    MainThread:3197566 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-12-07 20:39:25,790 INFO    MainThread:3197566 [wandb_run.py:_footer_sync_info():3428] logging synced files
+2023-12-07 20:39:25,791 DEBUG   HandlerThread:3197566 [handler.py:handle_request():144] handle_request: shutdown
+2023-12-07 20:39:25,791 INFO    HandlerThread:3197566 [handler.py:finish():842] shutting down handler
+2023-12-07 20:39:26,732 INFO    WriterThread:3197566 [datastore.py:close():298] close: /scratch/xc1490/projects/hpml/project/sparsegpt/wandb/run-20231207_201312-uzdxyybd/run-uzdxyybd.wandb
+2023-12-07 20:39:26,789 INFO    SenderThread:3197566 [sender.py:finish():1550] shutting down sender
+2023-12-07 20:39:26,789 INFO    SenderThread:3197566 [file_pusher.py:finish():167] shutting down file pusher
+2023-12-07 20:39:26,789 INFO    SenderThread:3197566 [file_pusher.py:join():172] waiting for file pusher

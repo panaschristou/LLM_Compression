@@ -25,7 +25,11 @@ python -m bitsandbytes
 make sure to export `BNB_CUDA_VERSION` and `LD_LIBRARY_PATH` if use different cuda version.
 
 # scripts
+- unstructured Pruning: [sparsegpt](sparsegpt)
+- structured Pruning: [LLM-pruner](LLM-pruner)
+- quantization: [bitsandbytes](bitsandbytes)
 
+To run jobs, go to [jobs](jobs)
 
 
 # Results:

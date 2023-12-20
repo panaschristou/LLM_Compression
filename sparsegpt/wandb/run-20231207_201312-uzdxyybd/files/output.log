@@ -1,0 +1,1285 @@
+/scratch/xc1490/projects/hpml/project/sparsegpt/bitsandbytes/cuda_setup/main.py:106: UserWarning:
+================================================================================
+WARNING: Manual override via BNB_CUDA_VERSION env variable detected!
+BNB_CUDA_VERSION=XXX can be used to load a bitsandbytes version that is different from the PyTorch CUDA version.
+If this was unintended set the BNB_CUDA_VERSION variable to an empty string: export BNB_CUDA_VERSION=
+If you use the manual override make sure the right libcudart.so is in your LD_LIBRARY_PATH
+For example by adding the following to your .bashrc: export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<path_to_cuda_dir/lib64
+Loading CUDA version: BNB_CUDA_VERSION=113
+================================================================================
+  warn((f'\n\n{"="*80}\n'
+
+
+
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████| 3/3 [04:16<00:00, 85.37s/it]
+You are using the legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This means that tokens that come after special tokens will not be properly handled. We recommend you to read the related pull request available at https://github.com/huggingface/transformers/pull/24565
+Repo card metadata block was not found. Setting CardData to empty.
+/ext3/miniconda3/lib/python3.11/site-packages/datasets/table.py:1421: FutureWarning: promote has been superseded by mode='default'.
+  table = cls._concat_blocks(blocks, axis=0)
+Repo card metadata block was not found. Setting CardData to empty.
+Token indices sequence length is longer than the specified maximum sequence length for this model (3908 > 2048). Running this sequence through the model will result in indexing errors
+Starting...
+Ready.
+0 self_attn.q_proj
+Pruning ...
+time 16.65
+error 182.63214111328125
+0 self_attn.k_proj
+Pruning ...
+time 1.07
+error 203.84771728515625
+0 self_attn.v_proj
+Pruning ...
+time 1.07
+error 80.6788330078125
+0 self_attn.o_proj
+Pruning ...
+time 1.04
+error 22.30718421936035
+0 mlp.gate_proj
+Pruning ...
+time 0.85
+error 1356.1563720703125
+0 mlp.up_proj
+Pruning ...
+time 0.84
+error 1271.8031005859375
+0 mlp.down_proj
+Pruning ...
+time 2.66
+error 75.89059448242188
+1 self_attn.q_proj
+Pruning ...
+time 1.99
+error 2697.6982421875
+1 self_attn.k_proj
+Pruning ...
+time 0.84
+error 2787.033203125
+1 self_attn.v_proj
+Pruning ...
+time 0.84
+error 579.21240234375
+1 self_attn.o_proj
+Pruning ...
+time 0.84
+error 165.92465209960938
+1 mlp.gate_proj
+Pruning ...
+time 0.85
+error 8456.4384765625
+1 mlp.up_proj
+Pruning ...
+time 0.96
+error 7364.1044921875
+1 mlp.down_proj
+Pruning ...
+time 2.66
+error 551.6838989257812
+2 self_attn.q_proj
+Pruning ...
+time 1.98
+error 10135.7607421875
+2 self_attn.k_proj
+Pruning ...
+time 0.84
+error 9724.431640625
+2 self_attn.v_proj
+Pruning ...
+time 0.84
+error 2399.16748046875
+2 self_attn.o_proj
+Pruning ...
+time 0.84
+error 420.4904479980469
+2 mlp.gate_proj
+Pruning ...
+time 0.84
+error 23096.125
+2 mlp.up_proj
+Pruning ...
+time 0.84
+error 18716.875
+2 mlp.down_proj
+Pruning ...
+time 2.67
+error 2286.46826171875
+3 self_attn.q_proj
+Pruning ...
+time 1.98
+error 40857.734375
+3 self_attn.k_proj
+Pruning ...
+time 0.84
+error 39836.19140625
+3 self_attn.v_proj
+Pruning ...
+time 0.84
+error 16140.3828125
+3 self_attn.o_proj
+Pruning ...
+time 0.86
+error 588.539794921875
+3 mlp.gate_proj
+Pruning ...
+time 0.84
+error 41325.390625
+3 mlp.up_proj
+Pruning ...
+time 0.84
+error 34508.17578125
+3 mlp.down_proj
+Pruning ...
+time 2.67
+error 2352.906494140625
+4 self_attn.q_proj
+Pruning ...
+time 1.99
+error 52359.57421875
+4 self_attn.k_proj
+Pruning ...
+time 0.84
+error 51049.77734375
+4 self_attn.v_proj
+Pruning ...
+time 0.95
+error 23368.009765625
+4 self_attn.o_proj
+Pruning ...
+time 0.84
+error 977.0670166015625
+4 mlp.gate_proj
+Pruning ...
+time 0.84
+error 59902.39453125
+4 mlp.up_proj
+Pruning ...
+time 0.84
+error 49374.81640625
+4 mlp.down_proj
+Pruning ...
+time 2.66
+error 3829.0185546875
+5 self_attn.q_proj
+Pruning ...
+time 1.98
+error 70396.921875
+5 self_attn.k_proj
+Pruning ...
+time 0.84
+error 69601.546875
+5 self_attn.v_proj
+Pruning ...
+time 0.84
+error 33474.9453125
+5 self_attn.o_proj
+Pruning ...
+time 0.85
+error 1095.607177734375
+5 mlp.gate_proj
+Pruning ...
+time 0.84
+error 72957.6015625
+5 mlp.up_proj
+Pruning ...
+time 0.84
+error 61245.84375
+5 mlp.down_proj
+Pruning ...
+time 2.66
+error 5153.0888671875
+6 self_attn.q_proj
+Pruning ...
+time 1.98
+error 72054.8671875
+6 self_attn.k_proj
+Pruning ...
+time 0.85
+error 69527.796875
+6 self_attn.v_proj
+Pruning ...
+time 0.84
+error 33777.1328125
+6 self_attn.o_proj
+Pruning ...
+time 0.84
+error 2927.05517578125
+6 mlp.gate_proj
+Pruning ...
+time 0.84
+error 84846.25
+6 mlp.up_proj
+Pruning ...
+time 0.85
+error 70951.5078125
+6 mlp.down_proj
+Pruning ...
+time 2.65
+error 9274.853515625
+7 self_attn.q_proj
+Pruning ...
+time 2.10
+error 80907.6328125
+7 self_attn.k_proj
+Pruning ...
+time 0.84
+error 79782.765625
+7 self_attn.v_proj
+Pruning ...
+time 0.84
+error 41664.5859375
+7 self_attn.o_proj
+Pruning ...
+time 0.84
+error 3448.7509765625
+7 mlp.gate_proj
+Pruning ...
+time 0.84
+error 91682.671875
+7 mlp.up_proj
+Pruning ...
+time 0.84
+error 81077.796875
+7 mlp.down_proj
+Pruning ...
+time 2.65
+error 9018.0849609375
+8 self_attn.q_proj
+Pruning ...
+time 1.98
+error 99852.8828125
+8 self_attn.k_proj
+Pruning ...
+time 0.85
+error 96111.390625
+8 self_attn.v_proj
+Pruning ...
+time 0.84
+error 57017.4453125
+8 self_attn.o_proj
+Pruning ...
+time 0.85
+error 5006.0751953125
+8 mlp.gate_proj
+Pruning ...
+time 0.85
+error 98509.390625
+8 mlp.up_proj
+Pruning ...
+time 0.84
+error 90386.84375
+8 mlp.down_proj
+Pruning ...
+time 2.67
+error 10872.1640625
+9 self_attn.q_proj
+Pruning ...
+time 1.99
+error 100869.609375
+9 self_attn.k_proj
+Pruning ...
+time 0.85
+error 99525.875
+9 self_attn.v_proj
+Pruning ...
+time 0.84
+error 55066.6015625
+9 self_attn.o_proj
+Pruning ...
+time 0.84
+error 6772.7060546875
+9 mlp.gate_proj
+Pruning ...
+time 0.84
+error 106832.625
+9 mlp.up_proj
+Pruning ...
+time 0.84
+error 100360.75
+9 mlp.down_proj
+Pruning ...
+time 2.65
+error 13096.490234375
+10 self_attn.q_proj
+Pruning ...
+time 1.98
+error 106052.8359375
+10 self_attn.k_proj
+Pruning ...
+time 0.84
+error 104384.8671875
+10 self_attn.v_proj
+Pruning ...
+time 0.85
+error 64194.53125
+10 self_attn.o_proj
+Pruning ...
+time 0.84
+error 7870.62451171875
+10 mlp.gate_proj
+Pruning ...
+time 0.85
+error 112159.6640625
+10 mlp.up_proj
+Pruning ...
+time 0.84
+error 109534.4453125
+10 mlp.down_proj
+Pruning ...
+time 2.66
+error 15013.8720703125
+11 self_attn.q_proj
+Pruning ...
+time 2.00
+error 114428.6796875
+11 self_attn.k_proj
+Pruning ...
+time 0.85
+error 112827.578125
+11 self_attn.v_proj
+Pruning ...
+time 0.84
+error 68486.578125
+11 self_attn.o_proj
+Pruning ...
+time 0.84
+error 10483.1552734375
+11 mlp.gate_proj
+Pruning ...
+time 0.84
+error 120106.7578125
+11 mlp.up_proj
+Pruning ...
+time 0.84
+error 120605.71875
+11 mlp.down_proj
+Pruning ...
+time 2.76
+error 18084.498046875
+12 self_attn.q_proj
+Pruning ...
+time 1.98
+error 116757.421875
+12 self_attn.k_proj
+Pruning ...
+time 0.84
+error 114129.75
+12 self_attn.v_proj
+Pruning ...
+time 0.84
+error 70667.8671875
+12 self_attn.o_proj
+Pruning ...
+time 0.84
+error 14252.576171875
+12 mlp.gate_proj
+Pruning ...
+time 0.84
+error 125978.2890625
+12 mlp.up_proj
+Pruning ...
+time 0.84
+error 129156.40625
+12 mlp.down_proj
+Pruning ...
+time 2.66
+error 21843.435546875
+13 self_attn.q_proj
+Pruning ...
+time 1.99
+error 128240.1484375
+13 self_attn.k_proj
+Pruning ...
+time 0.84
+error 125840.03125
+13 self_attn.v_proj
+Pruning ...
+time 0.84
+error 91951.90625
+13 self_attn.o_proj
+Pruning ...
+time 0.85
+error 14820.08203125
+13 mlp.gate_proj
+Pruning ...
+time 0.84
+error 141940.4375
+13 mlp.up_proj
+Pruning ...
+time 0.84
+error 145499.109375
+13 mlp.down_proj
+Pruning ...
+time 2.64
+error 26891.76171875
+14 self_attn.q_proj
+Pruning ...
+time 1.98
+error 125311.5
+14 self_attn.k_proj
+Pruning ...
+time 0.85
+error 124787.46875
+14 self_attn.v_proj
+Pruning ...
+time 0.84
+error 91913.484375
+14 self_attn.o_proj
+Pruning ...
+time 0.84
+error 13825.3740234375
+14 mlp.gate_proj
+Pruning ...
+time 0.84
+error 158628.78125
+14 mlp.up_proj
+Pruning ...
+time 0.85
+error 161812.8125
+14 mlp.down_proj
+Pruning ...
+time 2.66
+error 30031.04296875
+15 self_attn.q_proj
+Pruning ...
+time 1.99
+error 141367.71875
+15 self_attn.k_proj
+Pruning ...
+time 0.85
+error 138735.5625
+15 self_attn.v_proj
+Pruning ...
+time 0.84
+error 108555.75
+15 self_attn.o_proj
+Pruning ...
+time 0.85
+error 15254.361328125
+15 mlp.gate_proj
+Pruning ...
+time 0.84
+error 176310.5625
+15 mlp.up_proj
+Pruning ...
+time 0.84
+error 178082.8125
+15 mlp.down_proj
+Pruning ...
+time 2.65
+error 34421.21875
+16 self_attn.q_proj
+Pruning ...
+time 1.99
+error 144735.421875
+16 self_attn.k_proj
+Pruning ...
+time 0.84
+error 145066.09375
+16 self_attn.v_proj
+Pruning ...
+time 0.84
+error 111564.2421875
+16 self_attn.o_proj
+Pruning ...
+time 0.84
+error 12433.755859375
+16 mlp.gate_proj
+Pruning ...
+time 0.85
+error 191108.78125
+16 mlp.up_proj
+Pruning ...
+time 0.85
+error 192071.78125
+16 mlp.down_proj
+Pruning ...
+time 2.65
+error 36492.9921875
+17 self_attn.q_proj
+Pruning ...
+time 1.98
+error 133771.5
+17 self_attn.k_proj
+Pruning ...
+time 0.85
+error 133979.34375
+17 self_attn.v_proj
+Pruning ...
+time 0.85
+error 102078.03125
+17 self_attn.o_proj
+Pruning ...
+time 0.96
+error 16815.203125
+17 mlp.gate_proj
+Pruning ...
+time 0.84
+error 203940.625
+17 mlp.up_proj
+Pruning ...
+time 0.84
+error 202980.3125
+17 mlp.down_proj
+Pruning ...
+time 2.66
+error 41811.296875
+18 self_attn.q_proj
+Pruning ...
+time 1.99
+error 148259.890625
+18 self_attn.k_proj
+Pruning ...
+time 0.84
+error 147301.90625
+18 self_attn.v_proj
+Pruning ...
+time 0.85
+error 122811.2109375
+18 self_attn.o_proj
+Pruning ...
+time 0.85
+error 17003.4375
+18 mlp.gate_proj
+Pruning ...
+time 0.85
+error 220478.21875
+18 mlp.up_proj
+Pruning ...
+time 0.85
+error 216565.546875
+18 mlp.down_proj
+Pruning ...
+time 2.65
+error 49498.90625
+19 self_attn.q_proj
+Pruning ...
+time 1.98
+error 145285.015625
+19 self_attn.k_proj
+Pruning ...
+time 0.84
+error 144115.0
+19 self_attn.v_proj
+Pruning ...
+time 0.86
+error 129564.1953125
+19 self_attn.o_proj
+Pruning ...
+time 0.84
+error 21745.177734375
+19 mlp.gate_proj
+Pruning ...
+time 0.85
+error 241143.015625
+19 mlp.up_proj
+Pruning ...
+time 0.84
+error 233389.6875
+19 mlp.down_proj
+Pruning ...
+time 2.66
+error 57859.81640625
+20 self_attn.q_proj
+Pruning ...
+time 1.98
+error 145064.21875
+20 self_attn.k_proj
+Pruning ...
+time 0.96
+error 143688.75
+20 self_attn.v_proj
+Pruning ...
+time 0.84
+error 129270.265625
+20 self_attn.o_proj
+Pruning ...
+time 0.84
+error 21265.2109375
+20 mlp.gate_proj
+Pruning ...
+time 0.84
+error 259672.015625
+20 mlp.up_proj
+Pruning ...
+time 0.84
+error 247766.75
+20 mlp.down_proj
+Pruning ...
+time 2.66
+error 63089.59375
+21 self_attn.q_proj
+Pruning ...
+time 1.99
+error 137965.953125
+21 self_attn.k_proj
+Pruning ...
+time 0.84
+error 134519.1875
+21 self_attn.v_proj
+Pruning ...
+time 0.84
+error 140024.65625
+21 self_attn.o_proj
+Pruning ...
+time 0.84
+error 26484.0625
+21 mlp.gate_proj
+Pruning ...
+time 0.84
+error 273493.1875
+21 mlp.up_proj
+Pruning ...
+time 0.85
+error 258269.78125
+21 mlp.down_proj
+Pruning ...
+time 2.67
+error 71529.125
+22 self_attn.q_proj
+Pruning ...
+time 1.99
+error 138775.90625
+22 self_attn.k_proj
+Pruning ...
+time 0.84
+error 137973.046875
+22 self_attn.v_proj
+Pruning ...
+time 0.84
+error 138222.46875
+22 self_attn.o_proj
+Pruning ...
+time 0.84
+error 22581.583984375
+22 mlp.gate_proj
+Pruning ...
+time 0.84
+error 286812.53125
+22 mlp.up_proj
+Pruning ...
+time 0.84
+error 266026.6875
+22 mlp.down_proj
+Pruning ...
+time 2.68
+error 77382.9765625
+23 self_attn.q_proj
+Pruning ...
+time 1.98
+error 154272.078125
+23 self_attn.k_proj
+Pruning ...
+time 0.84
+error 151595.140625
+23 self_attn.v_proj
+Pruning ...
+time 0.84
+error 165942.375
+23 self_attn.o_proj
+Pruning ...
+time 0.84
+error 25979.30078125
+23 mlp.gate_proj
+Pruning ...
+time 0.85
+error 306128.25
+23 mlp.up_proj
+Pruning ...
+time 0.84
+error 278715.9375
+23 mlp.down_proj
+Pruning ...
+time 2.65
+error 85873.015625
+24 self_attn.q_proj
+Pruning ...
+time 2.00
+error 150985.046875
+24 self_attn.k_proj
+Pruning ...
+time 0.84
+error 147516.625
+24 self_attn.v_proj
+Pruning ...
+time 0.85
+error 165614.203125
+24 self_attn.o_proj
+Pruning ...
+time 0.85
+error 26530.13671875
+24 mlp.gate_proj
+Pruning ...
+time 0.85
+error 324502.5
+24 mlp.up_proj
+Pruning ...
+time 0.84
+error 292188.6875
+24 mlp.down_proj
+Pruning ...
+time 2.65
+error 89676.953125
+25 self_attn.q_proj
+Pruning ...
+time 1.98
+error 144187.4375
+25 self_attn.k_proj
+Pruning ...
+time 0.84
+error 141119.90625
+25 self_attn.v_proj
+Pruning ...
+time 0.84
+error 164764.703125
+25 self_attn.o_proj
+Pruning ...
+time 0.84
+error 26119.73828125
+25 mlp.gate_proj
+Pruning ...
+time 0.85
+error 335507.9375
+25 mlp.up_proj
+Pruning ...
+time 0.84
+error 301844.75
+25 mlp.down_proj
+Pruning ...
+time 2.67
+error 93566.859375
+26 self_attn.q_proj
+Pruning ...
+time 1.99
+error 165034.53125
+26 self_attn.k_proj
+Pruning ...
+time 0.84
+error 162572.875
+26 self_attn.v_proj
+Pruning ...
+time 0.84
+error 192256.578125
+26 self_attn.o_proj
+Pruning ...
+time 0.84
+error 23941.3125
+26 mlp.gate_proj
+Pruning ...
+time 0.84
+error 357114.1875
+26 mlp.up_proj
+Pruning ...
+time 0.84
+error 321132.25
+26 mlp.down_proj
+Pruning ...
+time 2.65
+error 99271.9609375
+27 self_attn.q_proj
+Pruning ...
+time 1.99
+error 156220.3125
+27 self_attn.k_proj
+Pruning ...
+time 0.84
+error 152418.984375
+27 self_attn.v_proj
+Pruning ...
+time 0.84
+error 194125.5
+27 self_attn.o_proj
+Pruning ...
+time 0.84
+error 28842.5703125
+27 mlp.gate_proj
+Pruning ...
+time 0.84
+error 374174.46875
+27 mlp.up_proj
+Pruning ...
+time 0.84
+error 335689.4375
+27 mlp.down_proj
+Pruning ...
+time 2.77
+error 104195.234375
+28 self_attn.q_proj
+Pruning ...
+time 1.98
+error 165570.6875
+28 self_attn.k_proj
+Pruning ...
+time 0.85
+error 163834.34375
+28 self_attn.v_proj
+Pruning ...
+time 0.84
+error 184614.90625
+28 self_attn.o_proj
+Pruning ...
+time 0.84
+error 22910.037109375
+28 mlp.gate_proj
+Pruning ...
+time 0.84
+error 384192.0625
+28 mlp.up_proj
+Pruning ...
+time 0.84
+error 343445.75
+28 mlp.down_proj
+Pruning ...
+time 2.65
+error 104712.859375
+29 self_attn.q_proj
+Pruning ...
+time 1.98
+error 170345.984375
+29 self_attn.k_proj
+Pruning ...
+time 0.84
+error 168471.765625
+29 self_attn.v_proj
+Pruning ...
+time 0.84
+error 197873.21875
+29 self_attn.o_proj
+Pruning ...
+time 0.84
+error 20963.626953125
+29 mlp.gate_proj
+Pruning ...
+time 0.84
+error 408050.15625
+29 mlp.up_proj
+Pruning ...
+time 0.84
+error 366435.15625
+29 mlp.down_proj
+Pruning ...
+time 2.65
+error 110978.296875
+30 self_attn.q_proj
+Pruning ...
+time 1.98
+error 180458.234375
+30 self_attn.k_proj
+Pruning ...
+time 0.84
+error 178950.375
+30 self_attn.v_proj
+Pruning ...
+time 0.84
+error 211443.6875
+30 self_attn.o_proj
+Pruning ...
+time 0.84
+error 24416.806640625
+30 mlp.gate_proj
+Pruning ...
+time 0.92
+error 423174.34375
+30 mlp.up_proj
+Pruning ...
+time 0.86
+error 382756.90625
+30 mlp.down_proj
+Pruning ...
+time 2.66
+error 114113.2421875
+31 self_attn.q_proj
+Pruning ...
+time 1.99
+error 180318.703125
+31 self_attn.k_proj
+Pruning ...
+time 0.84
+error 180479.421875
+31 self_attn.v_proj
+Pruning ...
+time 0.84
+error 218754.390625
+31 self_attn.o_proj
+Pruning ...
+time 0.84
+error 18981.384765625
+31 mlp.gate_proj
+Pruning ...
+time 0.85
+error 434696.4375
+31 mlp.up_proj
+Pruning ...
+time 0.84
+error 396433.875
+31 mlp.down_proj
+Pruning ...
+time 2.67
+error 116885.46875
+32 self_attn.q_proj
+Pruning ...
+time 1.98
+error 186203.40625
+32 self_attn.k_proj
+Pruning ...
+time 0.84
+error 185472.796875
+32 self_attn.v_proj
+Pruning ...
+time 0.84
+error 232153.25
+32 self_attn.o_proj
+Pruning ...
+time 0.84
+error 15721.7080078125
+32 mlp.gate_proj
+Pruning ...
+time 0.84
+error 446543.09375
+32 mlp.up_proj
+Pruning ...
+time 0.84
+error 413018.09375
+32 mlp.down_proj
+Pruning ...
+time 2.66
+error 119684.671875
+33 self_attn.q_proj
+Pruning ...
+time 1.98
+error 197295.3125
+33 self_attn.k_proj
+Pruning ...
+time 0.84
+error 196842.953125
+33 self_attn.v_proj
+Pruning ...
+time 0.96
+error 247019.015625
+33 self_attn.o_proj
+Pruning ...
+time 0.84
+error 19665.365234375
+33 mlp.gate_proj
+Pruning ...
+time 0.86
+error 462208.65625
+33 mlp.up_proj
+Pruning ...
+time 0.84
+error 433290.53125
+33 mlp.down_proj
+Pruning ...
+time 2.65
+error 126816.8203125
+34 self_attn.q_proj
+Pruning ...
+time 1.98
+error 173412.15625
+34 self_attn.k_proj
+Pruning ...
+time 0.84
+error 172811.765625
+34 self_attn.v_proj
+Pruning ...
+time 0.84
+error 218320.8125
+34 self_attn.o_proj
+Pruning ...
+time 0.85
+error 29514.5546875
+34 mlp.gate_proj
+Pruning ...
+time 0.84
+error 462895.1875
+34 mlp.up_proj
+Pruning ...
+time 0.84
+error 444191.4375
+34 mlp.down_proj
+Pruning ...
+time 2.66
+error 134771.921875
+35 self_attn.q_proj
+Pruning ...
+time 1.99
+error 160316.375
+35 self_attn.k_proj
+Pruning ...
+time 0.84
+error 158850.265625
+35 self_attn.v_proj
+Pruning ...
+time 0.84
+error 195651.8125
+35 self_attn.o_proj
+Pruning ...
+time 0.84
+error 24800.7109375
+35 mlp.gate_proj
+Pruning ...
+time 0.85
+error 468906.4375
+35 mlp.up_proj
+Pruning ...
+time 0.85
+error 457744.875
+35 mlp.down_proj
+Pruning ...
+time 2.66
+error 146686.125
+36 self_attn.q_proj
+Pruning ...
+time 1.99
+error 153769.53125
+36 self_attn.k_proj
+Pruning ...
+time 0.84
+error 152283.5
+36 self_attn.v_proj
+Pruning ...
+time 0.84
+error 210138.5625
+36 self_attn.o_proj
+Pruning ...
+time 0.87
+error 22728.203125
+36 mlp.gate_proj
+Pruning ...
+time 0.85
+error 473356.78125
+36 mlp.up_proj
+Pruning ...
+time 0.84
+error 469404.6875
+36 mlp.down_proj
+Pruning ...
+time 2.66
+error 161885.609375
+37 self_attn.q_proj
+Pruning ...
+time 1.98
+error 145645.96875
+37 self_attn.k_proj
+Pruning ...
+time 0.84
+error 144599.46875
+37 self_attn.v_proj
+Pruning ...
+time 0.85
+error 191564.9375
+37 self_attn.o_proj
+Pruning ...
+time 0.84
+error 34697.1796875
+37 mlp.gate_proj
+Pruning ...
+time 0.84
+error 465739.75
+37 mlp.up_proj
+Pruning ...
+time 0.85
+error 460569.5
+37 mlp.down_proj
+Pruning ...
+time 2.66
+error 175664.09375
+38 self_attn.q_proj
+Pruning ...
+time 1.99
+error 135622.546875
+38 self_attn.k_proj
+Pruning ...
+time 0.84
+error 134541.5
+38 self_attn.v_proj
+Pruning ...
+time 0.84
+error 183302.890625
+38 self_attn.o_proj
+Pruning ...
+time 0.84
+error 58798.8359375
+38 mlp.gate_proj
+Pruning ...
+time 0.85
+error 433013.15625
+38 mlp.up_proj
+Pruning ...
+time 0.85
+error 422142.40625
+38 mlp.down_proj
+Pruning ...
+time 2.66
+error 196982.875
+39 self_attn.q_proj
+Pruning ...
+time 1.98
+error 82784.5
+39 self_attn.k_proj
+Pruning ...
+time 0.84
+error 82144.671875
+39 self_attn.v_proj
+Pruning ...
+time 0.84
+error 103409.4453125
+39 self_attn.o_proj
+Pruning ...
+time 0.85
+error 29308.87890625
+39 mlp.gate_proj
+Pruning ...
+time 0.84
+error 334206.96875
+39 mlp.up_proj
+Pruning ...
+time 0.84
+error 321931.9375
+39 mlp.down_proj
+Pruning ...
+time 2.66
+error 228285.796875
+model.embed_tokens.weight tensor(1.5625e-06)
+model.layers.0.self_attn.q_proj.weight tensor(0.5000)
+model.layers.0.self_attn.k_proj.weight tensor(0.5000)
+model.layers.0.self_attn.v_proj.weight tensor(0.5000)
+model.layers.0.self_attn.o_proj.weight tensor(0.5000)
+model.layers.0.mlp.gate_proj.weight tensor(0.5000)
+model.layers.0.mlp.up_proj.weight tensor(0.5000)
+model.layers.0.mlp.down_proj.weight tensor(0.5000)
+897.8074064254761
+Token indices sequence length is longer than the specified maximum sequence length for this model (2824491 > 2048). Running this sequence through the model will result in indexing errors
+Dataset: wikitext2
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+Perplexity: 6.208753
+Dataset: ptb
+Evaluating ...
+Token indices sequence length is longer than the specified maximum sequence length for this model (1195302 > 2048). Running this sequence through the model will result in indexing errors
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+Perplexity: 37.238304
+Repo card metadata block was not found. Setting CardData to empty.
+Repo card metadata block was not found. Setting CardData to empty.
+Token indices sequence length is longer than the specified maximum sequence length for this model (3908 > 2048). Running this sequence through the model will result in indexing errors
+Dataset: c4
+Evaluating ...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+Perplexity: 8.119324
