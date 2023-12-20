@@ -31,7 +31,7 @@ Make sure to export `BNB_CUDA_VERSION` and `LD_LIBRARY_PATH` if you use a differ
 
 To run jobs, go to [jobs](jobs)
 
-# How to run
+# How to Run
 - LLM Pruner   
   - LLM Pruner was installed following the instructions from the originial repository which is also given here. Follow those instructions and then find in the script folder the script used to run the jobs. The script has been modified to be more of a sample and requires modification based on the type of environment you are running it in. In our case we run LLM Pruner on the NYU HPC Greene Cluster using singularity containers. The job had allocated 20 CPUs, 200 GB of memory and 1 V100 GPU.
   -  The script for the job requires you to specify the prune and tune directory to save the pruned/tuned model. The original script found in the LLM Pruner repo did no specify a folder inside prune_log/llama_prune and therefore every time you run the job it replaced the output model (in pytorch_model.bin). In order to circumvent that I included a folder in the llama_prune folder which indicates the pruning ratio and the level of pruning being done. This made it easier to run both the evaluation and test speedup tests for multiple pruned models at once. 
@@ -41,7 +41,7 @@ To run jobs, go to [jobs](jobs)
 
 
 # Results:
-Find in [notebooks/results.ipynb](notebooks/results.ipynb) for all results figure generation  
+You can see [notebooks/results.ipynb](notebooks/results.ipynb) for all results and figure generation.  
 Due to the size of both the pretrained and the pruned models it was not practical to include the files here.  
 Feel free to run the scripts and replicate the results yourselves.  
 
