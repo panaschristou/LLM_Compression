@@ -1,0 +1,3 @@
+Your pruned models will be saved in this folder with the name specific in the prune path.
+Each models folder will include a folder with the date and time it was trained, a description file, your training parameters 
+as well as your model which will be used in the tuning of the model and in all other functions, like the generation, speedup, etc.

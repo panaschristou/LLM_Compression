@@ -1,0 +1,2 @@
+This folder will contain your tuned model in the folder specified in the bash file as the output path.
+This folder will be used in other functions such as generation, evaluation etc.
