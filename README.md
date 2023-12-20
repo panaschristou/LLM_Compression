@@ -8,7 +8,7 @@ module load cuda/11.3.1
 
 srun --cpus-per-task=1 --time=0:30:00 --mem=24000 --gres=gpu:1 --pty /bin/bash
 
-#for compile bitsandbytes
+#to compile bitsandbytes
 singularity exec --nv --overlay /home/xc1490/home/apps/llm2/overlay-15GB-500K.ext3:rw /scratch/work/public/singularity/cuda11.0-cudnn8-devel-ubuntu18.04.sif /bin/bash
 source /ext3/env.sh
 
