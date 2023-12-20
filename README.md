@@ -29,7 +29,7 @@ make sure to export `BNB_CUDA_VERSION` and `LD_LIBRARY_PATH` if use different cu
 
 
 # Results:
-find in `notebooks/result.ipynb` for all results figure generation
+find in [notebooks/result.ipynb](notebooks/result.ipynb) for all results figure generation
 
 
 # Objectives, Solution Approach, Value of Solution 
