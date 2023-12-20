@@ -1,5 +1,37 @@
 # Compressing Large Language Models With Pruning, Distillation, and Quantization
 
+# set up environment
+```dotnetcli
+module purge
+module load cudnn/8.6.0.163-cuda11
+module load cuda/11.3.1
+
+srun --cpus-per-task=1 --time=0:30:00 --mem=24000 --gres=gpu:1 --pty /bin/bash
+
+#for compile bitsandbytes
+singularity exec --nv --overlay /home/xc1490/home/apps/llm2/overlay-15GB-500K.ext3:rw /scratch/work/public/singularity/cuda11.0-cudnn8-devel-ubuntu18.04.sif /bin/bash
+source /ext3/env.sh
+
+export BNB_CUDA_VERSION=113
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/share/apps/cuda/11.3.1/lib64
+
+cd /home/xc1490/home/projects/hpml/project/bitsandbytes
+CUDA_VERSION=113 make cuda11x
+python setup.py install
+#check if bitsandbytes is installed
+python -m bitsandbytes
+```
+
+make sure to export `BNB_CUDA_VERSION` and `LD_LIBRARY_PATH` if use different cuda version.
+
+# scripts
+
+
+
+# Results:
+find in `notebooks/result.ipynb` for all results figure generation
+
+
 # Objectives, Solution Approach, Value of Solution 
 
 Objectives:
