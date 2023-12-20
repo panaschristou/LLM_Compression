@@ -1,6 +1,6 @@
 # Compressing Large Language Models With Pruning, Distillation, and Quantization
 
-# set up environment
+# Set Up the Environment
 ```dotnetcli
 module purge
 module load cudnn/8.6.0.163-cuda11
@@ -22,12 +22,12 @@ python setup.py install
 python -m bitsandbytes
 ```
 
-make sure to export `BNB_CUDA_VERSION` and `LD_LIBRARY_PATH` if use different cuda version.
+Make sure to export `BNB_CUDA_VERSION` and `LD_LIBRARY_PATH` if you use a different CUDA version.
 
 # Scripts
-- unstructured Pruning: [sparsegpt](sparsegpt)
-- structured Pruning: [LLM-pruner](LLM-pruner)
-- quantization: [bitsandbytes](bitsandbytes)
+- Unstructured Pruning: [sparsegpt](sparsegpt)
+- Structured Pruning: [LLM-pruner](LLM-pruner)
+- Quantization: [bitsandbytes](bitsandbytes)
 
 To run jobs, go to [jobs](jobs)
 
@@ -41,7 +41,9 @@ To run jobs, go to [jobs](jobs)
 
 
 # Results:
-find in [notebooks/results.ipynb](notebooks/results.ipynb) for all results figure generation
+Find in [notebooks/results.ipynb](notebooks/results.ipynb) for all results figure generation  
+Due to the size of both the pretrained and the pruned models it was not practical to include the files here.  
+Feel free to run the scripts and replicate the results yourselves.  
 
 
 # Objectives, Solution Approach, Value of Solution 
