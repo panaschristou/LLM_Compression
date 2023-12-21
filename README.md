@@ -1,5 +1,8 @@
 # Compressing Large Language Models With Pruning, Distillation, and Quantization
 
+# Intro 
+LLMs (Large Language Models) have captured a lot of attention due to their ability to perform a multitude of tasks with accuracy and precision. They have shown to be able to adapt well to new tasks and to produce output to the user that resembles that of a human (i.e. exhibit human level reasoning). However, in order to achieve that level of accuracy LLMs usually have parameters that number in the billions and are trained on huge datasets. This means that the memory requirements and the computational complexity for inference are prohibitve for the deployment of the model on smaller devices with less compute and in the case where their memory requirements are reduced the task of fine tuining or knowledge distillation becomes exceedingly hard and requires specialized datasets. A substantial amount of funding is given for the research of efficient and performant pruning, tuning and knowledge distillation in order to make the deployment of LLMs on less computationally capable hardware possible.
+
 # Set Up the Environment
 ```dotnetcli
 module purge
