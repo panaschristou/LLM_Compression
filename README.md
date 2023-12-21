@@ -44,7 +44,13 @@ To run jobs, go to [jobs](jobs)
   - As you will find out the model can be pruned on multiple levels, channel, layer or block. You should be careful when specifying between them because the ratio may not directly correlate to the retained parameter ratio for the block or layer levels like it does for the channel level.
   -  The job script also contains the speedup test for the pretrained model, in our case Llama 2 7B, as well as the speedup test for the pruned model. If you don't need the speedup test for the pretrained model you can remove the test or if you want to run the speedup after in a separate job you can move that to a separate script.
   -  To generate an output we create a notebook file that uses only the required functions and initiates a prompt using interactive python widgets for the user to enter an input and then provides the models output. Initially the script required the installation and use of gradio but we removed that due to the extra dependencies needed. We found it was easier to use ipywidgets.
-
+- SparseGPT
+  - SparseGPT is not originally designed for Llama but it could be extended to have such functions. We could run one pass of the pruning. And we also experimented double pruning to test which one is better.
+  - the job scripts contain one pass, double pruning, and evaluation to generate our results.
+- QLoRA
+  - The QLoRA is installed following the instructions from original repo and the bitsandbytes repo. Users should be careful about the cuda version loaded. 
+  - The QLoRA could be used to quantize both SparseGPT and LLM-Pruner for Unstructured + Quantization / Structured + Quantization.
+  - Scripts are included to conduct quantization and evaluation.
 
 # Results:
 You can see [notebooks/results.ipynb](notebooks/results.ipynb) for all results and figure generation.  
