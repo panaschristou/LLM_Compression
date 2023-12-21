@@ -58,7 +58,8 @@ The results show that channel level pruning performs worse than block level prun
 
 # Demo
 
-![demo](https://github.com/panaschristou/LLM_Compression/blob/main/demo/GMT20231219-021032_Recording_1920x1080.mp4)
+
+https://github.com/panaschristou/LLM_Compression/assets/14315324/bd0d15c5-2161-4103-825d-88ef0541d695
 
 # Objectives, Solution Approach, Value of Solution 
 
