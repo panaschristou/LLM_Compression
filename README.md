@@ -52,13 +52,20 @@ To run jobs, go to [jobs](jobs)
   - The QLoRA could be used to quantize both SparseGPT and LLM-Pruner for Unstructured + Quantization / Structured + Quantization.
   - Scripts are included to conduct quantization and evaluation.
 
+
+
 # Results:
+
 You can see [notebooks/results.ipynb](notebooks/results.ipynb) for all results and figure generation.  
 Due to the size of both the pretrained and the pruned models it was not practical to include the files here.  
 Feel free to run the scripts and replicate the results yourselves.  
 
 The results show that channel level pruning performs worse than block level pruning because it does not retain as much of the internal structure of the LLM and breaks some of the important connections between layers. We also see evidence that a retained parameter ratio of less than 80% makes the LLM almost unusable. It is still yet to be verified if a different dataset than the Alpaca is able to bring the accuracy back up to a performant level. We see a huge reduction in the parameters and a decrese in inference time after quantization which greatly enhances the deployability of the model especially for the Llama 2 7B model.
 
+# Demo
+
+
+https://github.com/panaschristou/LLM_Compression/assets/14315324/bd0d15c5-2161-4103-825d-88ef0541d695
 
 # Objectives, Solution Approach, Value of Solution 
 
