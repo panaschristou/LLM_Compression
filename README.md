@@ -3,6 +3,9 @@
 # Intro 
 LLMs (Large Language Models) have captured a lot of attention due to their ability to perform a multitude of tasks with accuracy and precision. They have shown to be able to adapt well to new tasks and to produce output to the user that resembles that of a human (i.e. exhibit human level reasoning). However, in order to achieve that level of accuracy LLMs usually have parameters that number in the billions and are trained on huge datasets. This means that the memory requirements and the computational complexity for inference are prohibitve for the deployment of the model on smaller devices with less compute and in the case where their memory requirements are reduced the task of fine tuining or knowledge distillation becomes exceedingly hard and requires specialized datasets. A substantial amount of funding is given for the research of efficient and performant pruning, tuning and knowledge distillation in order to make the deployment of LLMs on less computationally capable hardware possible.
 
+# Description
+In this project we are examining the effect of structured and unstructured pruning on Llama 2 7B and Llama 2 13B by evaluating the accuracy of the model using the perplexity metric using the wikitext2, cb4 and ptb evaluation benchmarks. We also examine the effect of quantization on inference time. We run experiments to see the effect of channel level and block level pruning and the accuracy they maintain. We visualize the results and provide a demo on a sample question to verify the capabilities of the pruned and tuned models.
+
 # Set Up the Environment
 ```dotnetcli
 module purge
@@ -47,6 +50,8 @@ To run jobs, go to [jobs](jobs)
 You can see [notebooks/results.ipynb](notebooks/results.ipynb) for all results and figure generation.  
 Due to the size of both the pretrained and the pruned models it was not practical to include the files here.  
 Feel free to run the scripts and replicate the results yourselves.  
+
+The results show that channel level pruning performs worse than block level pruning because it does not retain as much of the internal structure of the LLM and breaks some of the important connections between layers. We also see evidence that a retained parameter ratio of less than 80% makes the LLM almost unusable. It is still yet to be verified if a different dataset than the Alpaca is able to bring the accuracy back up to a performant level. We see a huge reduction in the parameters and a decrese in inference time after quantization which greatly enhances the deployability of the model especially for the Llama 2 7B model.
 
 
 # Objectives, Solution Approach, Value of Solution 
