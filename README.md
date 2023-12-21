@@ -46,13 +46,19 @@ To run jobs, go to [jobs](jobs)
   -  To generate an output we create a notebook file that uses only the required functions and initiates a prompt using interactive python widgets for the user to enter an input and then provides the models output. Initially the script required the installation and use of gradio but we removed that due to the extra dependencies needed. We found it was easier to use ipywidgets.
 
 
+
+
 # Results:
+
 You can see [notebooks/results.ipynb](notebooks/results.ipynb) for all results and figure generation.  
 Due to the size of both the pretrained and the pruned models it was not practical to include the files here.  
 Feel free to run the scripts and replicate the results yourselves.  
 
 The results show that channel level pruning performs worse than block level pruning because it does not retain as much of the internal structure of the LLM and breaks some of the important connections between layers. We also see evidence that a retained parameter ratio of less than 80% makes the LLM almost unusable. It is still yet to be verified if a different dataset than the Alpaca is able to bring the accuracy back up to a performant level. We see a huge reduction in the parameters and a decrese in inference time after quantization which greatly enhances the deployability of the model especially for the Llama 2 7B model.
 
+# Demo
+
+![demo](https://github.com/panaschristou/LLM_Compression/blob/main/demo/GMT20231219-021032_Recording_1920x1080.mp4)
 
 # Objectives, Solution Approach, Value of Solution 
 
