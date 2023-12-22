@@ -105,6 +105,7 @@ Value of Solution:
 ![image](https://github.com/panaschristou/LLM_Compression/blob/main/results/quantized_model_performance_wikitext2.png)
 ![image](https://github.com/panaschristou/LLM_Compression/blob/main/results/quantized_model_performance_ptb.png)
 ![image](https://github.com/panaschristou/LLM_Compression/blob/main/results/quantized_model_performance_c4.png)
+![image](https://github.com/panaschristou/LLM_Compression/blob/main/results/sparseprune_0.8_twice.png)
 
 
 ![results/performance_infer_compute_line_wikitext2_Computational%20Complexity%20(GMac).png](https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_Number%20of%20Parameters%20(M).png)
