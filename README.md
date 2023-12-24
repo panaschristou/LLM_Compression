@@ -98,6 +98,7 @@ Value of Solution:
 
 # Results
 ## Bubble Charts
+Below are the bubble charts for the perplexity of each model. The size of the bubble indicates its inference time. This type of visualization helps show the different types of models, pretrained, pruned and pruned + quantized and their inference times and perplexity values ona single plot and show the effect of different types of improvement schemes on these evaluation metrics.
 ![image](results/bubble_wikitext2.png)
 ![image](results/bubble_ptb.png)
 ![image](results/bubble_c4.png)
