@@ -97,7 +97,7 @@ Value of Solution:
 ![image](results/methodpaper_model_structure_new.png)
 
 # Results
-
+## Bubble Charts
 ![image](results/bubble_wikitext2.png)
 ![image](results/bubble_ptb.png)
 ![image](results/bubble_c4.png)
