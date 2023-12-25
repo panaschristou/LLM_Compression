@@ -60,7 +60,7 @@ You can see [notebooks/results.ipynb](notebooks/results.ipynb) for all results a
 Due to the size of both the pretrained and the pruned models it was not practical to include the files here.  
 Feel free to run the scripts and replicate the results yourselves.  
 
-The results show that channel level pruning performs worse than block level pruning because it does not retain as much of the internal structure of the LLM and breaks some of the important connections between layers. We also see evidence that a retained parameter ratio of less than 80% makes the LLM almost unusable. It is still yet to be verified if a different dataset than the Alpaca is able to bring the accuracy back up to a performant level. We see a huge reduction in the parameters and a decrese in inference time after quantization which greatly enhances the deployability of the model especially for the Llama 2 7B model.
+The results show that channel level pruning performs worse than block level pruning because it does not retain as much of the internal structure of the LLM and breaks some of the important connections between layers. We also see evidence that a retained parameter ratio of less than 80% makes the LLM almost unusable. The double pruned models show much lower perplexity when compared to the single pruned models. It is still yet to be verified if a different dataset than the Alpaca is able to bring the accuracy back up to a performant level. We see a huge reduction in the parameters and a decrese in inference time after quantization which greatly enhances the deployability of the model especially for the Llama 2 7B model. 
 
 # Demo
 
@@ -96,7 +96,7 @@ Value of Solution:
 
 ![image](results/methodpaper_model_structure_new.png)
 
-# Results
+# Visualizations
 ## Perplexity & Inference Tiem Bubble Charts
 Below are the bubble charts for the perplexity of each model. The size of the bubble indicates its inference time. This type of visualization helps show the different types of models, pretrained, pruned and pruned + quantized and their inference times and perplexity values ona single plot and show the effect of different types of improvement schemes on these evaluation metrics.  
 
@@ -112,10 +112,12 @@ Below are the perplexity against pruning ratio charts for both models with only 
 ![image](https://github.com/panaschristou/LLM_Compression/blob/main/results/quantized_model_performance_c4.png)
 
 ## Perplexity vs Pruning Ratio Charts (Double Pruning)
-Below are the charts for the double pruned models compared to the single pruned models. The perplexity is evaluated on the c4 and wikitext2 benchmarks.
+Below are the charts for the double pruned models compared to the single pruned models. The perplexity is evaluated on the c4 and wikitext2 benchmarks. 
 
 ![image](https://github.com/panaschristou/LLM_Compression/blob/main/results/sparseprune_0.8_twice.png)
 
+## Perplexity vs Pruning Ratio Charts (Structure Pruning - Block vs Channel)
+Below are the charts for a comparison between pruning on a block level and pruning on a channel level on 3 metrics, the number of retained parameters, the memory requirements and the computational complexity of the model.
 
 ![results/performance_infer_compute_line_wikitext2_Computational%20Complexity%20(GMac).png](https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_Number%20of%20Parameters%20(M).png)
 ![[image](results/performance_infer_compute_line_wikitext2_Number of Parameters (M).png)](https://github.com/panaschristou/LLM_Compression/blob/main/results/performance_infer_compute_line_wikitext2_GPU%20Memory%20Requirements%20(MiB).png) 
