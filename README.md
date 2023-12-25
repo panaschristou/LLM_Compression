@@ -97,16 +97,23 @@ Value of Solution:
 ![image](results/methodpaper_model_structure_new.png)
 
 # Results
-## Bubble Charts
+## Perplexity & Inference Tiem Bubble Charts
 Below are the bubble charts for the perplexity of each model. The size of the bubble indicates its inference time. This type of visualization helps show the different types of models, pretrained, pruned and pruned + quantized and their inference times and perplexity values ona single plot and show the effect of different types of improvement schemes on these evaluation metrics.  
 
 ![image](results/bubble_wikitext2.png)
 ![image](results/bubble_ptb.png)
 ![image](results/bubble_c4.png)
 
+## Perplexity vs Pruning Ratio Charts
+Below are the perplexity against pruning ratio charts for both models with only pruning and for models with pruning and quantization. We distinguish between structured and unstrctured pruning for better comparison.
+
 ![image](https://github.com/panaschristou/LLM_Compression/blob/main/results/quantized_model_performance_wikitext2.png)
 ![image](https://github.com/panaschristou/LLM_Compression/blob/main/results/quantized_model_performance_ptb.png)
 ![image](https://github.com/panaschristou/LLM_Compression/blob/main/results/quantized_model_performance_c4.png)
+
+## Perplexity vs Pruning Ratio Charts (Double Pruning)
+Below are the charts for the double pruned models compared to the single pruned models. The perplexity is evaluated on the c4 and wikitext2 benchmarks.
+
 ![image](https://github.com/panaschristou/LLM_Compression/blob/main/results/sparseprune_0.8_twice.png)
 
 
